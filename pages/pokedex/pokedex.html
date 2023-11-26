@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../../img/charizardwall.png" width="100%" alt="Imagem de Fundo" class="imagem-de-fundo">
+            <img src="../../img/LOGO.png" width="200" alt="Imagem Sobreposta" class="imagem-sobreposta">
+        </div>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            
+            <li><a href="../jokenpokemon/jokenpokemon.html">Jokenpokemon</a></li>
+          
+           
+           
+         </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h1>POKEDEX.HTML</h1>
+            
+           
+            <div class="pokedex">
+                <div class="pokedex__esquerdo">
+                    <img class="imagem__pokedex" src="../../img/pokedex_esquerdo.png" alt="">
+                    <div id="img__pokemon">
+                       <!-- Aqui aparece a imagem vinda pelo JS com innerHTML -->
+                    </div>
+                    <div id="retorna__nome">
+                        Nome
+                    </div>
+                    <div id="poderes">
+                        Poderes
+                    </div>
+                    <div class="pokebola__girando">
+                        <img class="pokebola" src="../../img/pokebola1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="pokedex__direito">
+                    <img class="imagem__pokedex" src="../../img/pokedex_direito.png" alt="">
+                    <input type="text" name="" id="id__nome__pokemon" placeholder="ID/nome">
+                    <div id="texto__id">
+                        <h3>ID</h3>
+                    </div>
+                    <div id="numero__id">
+                        <!-- Aqui aparece o número do ID -->
+                    </div>
+                    <button class="btn__acao__1 btn__style" id="btn">Buscar</button>
+                    <button class="btn__acao__2 btn__style" id="btn__increment"></button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
