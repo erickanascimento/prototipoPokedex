@@ -65,28 +65,9 @@
                       
                     })
 
-                    // `ID: ${data['id']}
-                        // <h3>Nome:${data['name'].toUpperCase()} </h3>
-                        // Ordem: ${data['order']}<br>
-                        // Tamanho: ${data['height']}<br>
-                        // Experiencia: ${data['base_experience']}<br>
-                        // Habilidade 1: ${data['abilities']['0']['ability']['name'].toUpperCase()}<br>
-                        // Habilidade 2: ${data['abilities']['1']['ability']['name'].toUpperCase()}<br>
-                        // ` 
-                        // id.value = ""
+                   
             }
 
         }
-        // document.getElementById("btn").onclick = loadpk(3)
-
-        function girar__imagem(){
-            
-            img = data['sprites']['back_default'];
-                        document.getElementById("img__pokemon").innerHTML=
-                        `
-                        <img class="img__pokemonn" src="${img_rew}" alt="${data['name']}"></img>
-                        
-                        `
-
-        }
-        
+      
+     
