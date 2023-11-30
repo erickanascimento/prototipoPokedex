@@ -61,6 +61,7 @@
                         // Habilidade 1: ${data['abilities']['0']['ability']['name'].toUpperCase()}<br>
                         // Habilidade 2: ${data['abilities']['1']['ability']['name'].toUpperCase()}<br>
                         // ` 
+                        id.value = ""
             }
 
         }
