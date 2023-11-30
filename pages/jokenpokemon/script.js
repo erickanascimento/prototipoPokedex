@@ -161,21 +161,7 @@ function apostar(retornoAposta) {
 
         apostar(retornoAposta)
 
-        // document.getElementById("fala__jogador").innerHTML =
-        //     ` Empatamos meu camarada!!! 
-        //     <audio id="music" autoplay>
-        //     <source src="audio/empate.mp3" type = "audio/mpeg">
-        //     </audio>
-        //     `
-
-        // document.getElementById("fala__oponente").innerHTML =
-        //     ` É, mas não se precipite.! Vamos contunuar...   `
-
-        //Imagem apostada jogador         
-        // apostaJogador.innerHTML = `<img class="imagens__apostadas" src="imgjokenpo/jkp.png" alt="jkp">`
-        //Imagem apostada jogador   
-        // apostaOponente.innerHTML = `<img class="imagens__apostadas" src="imgjokenpo/jkp.png" alt="jkp">`
-
+     
 
         //Jogador perde
     } else if (maquina == "pedra" && retornoAposta == "tesoura") {

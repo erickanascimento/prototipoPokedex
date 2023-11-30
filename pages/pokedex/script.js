@@ -1,6 +1,15 @@
 
        
-        function loadpk() {
+        function loadpk(frente__costas) {
+
+            if(frente__costas == "frente"){
+                front__rew = "front_default"
+            }                
+            else if(frente__costas == "costas"){
+                front__rew = "back_default"
+            }
+                
+            
             //imput que vem o número do id
              id = document.getElementById("id__nome__pokemon")
             let url = 'https://pokeapi.co/api/v2/pokemon/';
@@ -34,6 +43,8 @@
                         console.clear();
                         console.log(data);
 
+                        img = data['sprites'][front__rew];
+
                         document.getElementById("poderes").innerHTML =
                         `                     
                         Tamanho: ${data['height']}<br>
@@ -41,7 +52,8 @@
                         Habilidade 1: ${data['abilities']['0']['ability']['name'].toUpperCase()}<br>
                         Habilidade 2: ${data['abilities']['1']['ability']['name'].toUpperCase()}<br>
                         `                       
-                         img = data['sprites']['front_default'];
+                         
+                         
                         document.getElementById("img__pokemon").innerHTML=
                         `
                         <img class="img__pokemonn" src="${img}" alt="${data['name']}"></img>
@@ -50,7 +62,7 @@
                         document.getElementById("retorna__nome").innerHTML = data['name'].toUpperCase()
 
                         document.getElementById("numero__id").innerHTML = data['id']
-                        
+                      
                     })
 
                     // `ID: ${data['id']}
@@ -61,8 +73,20 @@
                         // Habilidade 1: ${data['abilities']['0']['ability']['name'].toUpperCase()}<br>
                         // Habilidade 2: ${data['abilities']['1']['ability']['name'].toUpperCase()}<br>
                         // ` 
-                        id.value = ""
+                        // id.value = ""
             }
 
         }
-        document.getElementById("btn").onclick = loadpk
+        // document.getElementById("btn").onclick = loadpk(3)
+
+        function girar__imagem(){
+            
+            img = data['sprites']['back_default'];
+                        document.getElementById("img__pokemon").innerHTML=
+                        `
+                        <img class="img__pokemonn" src="${img_rew}" alt="${data['name']}"></img>
+                        
+                        `
+
+        }
+        

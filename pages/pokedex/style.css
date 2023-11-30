@@ -72,7 +72,8 @@ body {
 }
 .img__pokemonn{
     width: 100%;
-    height: 100%;    
+    height: 100%; 
+    transition: all 2s;   
 }
 .btn__acao__1{
     width: 130px;
